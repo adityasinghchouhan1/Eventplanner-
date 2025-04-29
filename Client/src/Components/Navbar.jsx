@@ -14,7 +14,7 @@ const Navbar = () => {
   }
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-20 flex justify-between items-center px-4 py-8 bg-black/15 backdrop-blur-sm text-white">
+      <nav className="fixed top-0 left-0 w-full z-20 flex justify-between items-center px-4 py-8 bg-black/25  text-white">
         <div className=" text-2xl font-semibold text-white">MY LOgo</div>
         <ul className="hidden md:flex gap-12 font-bold">
           <li>
@@ -45,8 +45,8 @@ const Navbar = () => {
           {isOpen ? <FaTimes /> : <FaBars />}
         </div>
         <div
-          className={`md:hidden fixed z-[9999] top-0 left-0 text-white h-full bg-transparent backdrop-blur-sm transition-all duration-300 overflow-hidden font-serif border-r-4 border-yellow-500 ${
-            isOpen ? 'w-56' : 'w-0'
+          className={`md:hidden fixed z-[9999] top-0 left-0 text-white h-full transition-all duration-300 overflow-hidden font-serif border-r-4 border-yellow-500 ${
+            isOpen ? 'w-56 backdrop-blur-sm' : 'w-0'
           }`}
         >
           <ul className="flex flex-col justify-center items-center gap-8 text-xl pt-16 text-center">

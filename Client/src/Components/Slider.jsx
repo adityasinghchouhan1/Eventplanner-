@@ -43,8 +43,8 @@ export default () => {
                 className="w-full h-[100vh] bg-center bg-no-repeat bg-cover flex flex-col justify-center items-center"
                 style={{ backgroundImage: `url(${item.img})` }}
               >
-                <div className=" absolute bottom-10 sm:left-8 left-0  flex flex-col justify-start items-start p-5">
-                  <h1 className="text-6xl font-sans font-bold text-white">
+                <div className=" absolute bottom-10 sm:left-8 left-0  gap-6 flex flex-col justify-start items-start p-5">
+                  <h1 className="text-6xl font-sans font-bold text-white ">
                     The Wedding Planner
                   </h1>
                   <p className="sm:text-sm text-xs font-mono text-white text-start  ">
