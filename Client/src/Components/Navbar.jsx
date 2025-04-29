@@ -14,9 +14,9 @@ const Navbar = () => {
   }
   return (
     <>
-      <nav className="flex justify-between items-center p-4 relative bg-transparent">
-        <div className="text-white text-2xl font-semibold">MY LOgo</div>
-        <ul className="hidden md:flex text-white gap-6">
+      <nav className="fixed top-0 left-0 w-full z-20 flex justify-between items-center px-4 py-8 bg-black/15 backdrop-blur-sm text-white">
+        <div className=" text-2xl font-semibold text-white">MY LOgo</div>
+        <ul className="hidden md:flex gap-12 font-bold">
           <li>
             <NavLink to="" onClick={CloseButton}>
               Home
@@ -40,16 +40,16 @@ const Navbar = () => {
         </ul>
         <div
           onClick={ToggleButton}
-          className="md:hidden text-2xl cursor-pointer text-white"
+          className="md:hidden text-2xl cursor-pointer"
         >
           {isOpen ? <FaTimes /> : <FaBars />}
         </div>
         <div
-          className={`md:hidden fixed top-0 left-0 text-white  h-full bg-black transition-all duration-300  overflow-hidden font-serif  ${
-            isOpen ? 'w-64' : 'w-0'
+          className={`md:hidden fixed z-[9999] top-0 left-0 text-white h-full bg-transparent backdrop-blur-sm transition-all duration-300 overflow-hidden font-serif border-r-4 border-yellow-500 ${
+            isOpen ? 'w-56' : 'w-0'
           }`}
         >
-          <ul className="flex flex-col justify-center items-center gap-8 text-xl pt-10 text-center">
+          <ul className="flex flex-col justify-center items-center gap-8 text-xl pt-16 text-center">
             <li className="hover:bg-slate-900 w-full py-2 transition-all duration-100">
               {' '}
               <NavLink to="" onClick={CloseButton}>

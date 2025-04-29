@@ -28,7 +28,7 @@ export default () => {
   ]
   return (
     <>
-      <div className="w-full overflow-hidden h-[100vh]">
+      <div className="w-full z-0 overflow-hidden h-[100vh]">
         <Swiper
           // install Swiper modules
           modules={[Navigation, Pagination, Autoplay]}
@@ -40,7 +40,7 @@ export default () => {
           {data.map((item, index) => (
             <SwiperSlide key={index}>
               <div
-                className="w-full h-[90vh] bg-center bg-no-repeat bg-cover flex flex-col justify-center items-center"
+                className="w-full h-[100vh] bg-center bg-no-repeat bg-cover flex flex-col justify-center items-center"
                 style={{ backgroundImage: `url(${item.img})` }}
               >
                 <div className=" absolute bottom-10 sm:left-8 left-0  flex flex-col justify-start items-start p-5">
