@@ -14,7 +14,7 @@ const Navbar = () => {
   }
   return (
     <>
-      <nav className="flex justify-between items-center p-4 relative bg-black">
+      <nav className="flex justify-between items-center p-4 relative bg-transparent">
         <div className="text-white text-2xl font-semibold">MY LOgo</div>
         <ul className="hidden md:flex text-white gap-6">
           <li>
