@@ -47,7 +47,7 @@ export default () => {
                   <h1 className="text-6xl font-sans font-bold text-white">
                     The Wedding Planner
                   </h1>
-                  <p className="text-sm font-mono text-gray-500">
+                  <p className="sm:text-sm text-xs font-mono text-white text-start  ">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Blanditiis, perspiciatis voluptates. Consectetur hic facilis
                     delectus quasi ratione ipsa, veniam tempore adipisci,
