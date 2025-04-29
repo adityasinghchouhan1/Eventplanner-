@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import img from '../../public/S2.webp'
 import { gsap } from 'gsap'
+import Heading from '../Resue/Heading'
 const Testimonial = () => {
   const imgRef = useRef(null)
   useEffect(() => {
@@ -22,12 +23,21 @@ const Testimonial = () => {
   })
   return (
     <>
-      <div className="p-10">
-        <img
-          src={img}
-          ref={imgRef}
-          className=" object-fit-fill bg-center bg-cover"
+      <div className="flex justify-center items-center flex-col p-4">
+        <Heading
+          title={'Live your magic and save your precious memories!'}
+          discription={
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et praesentium  voluptatum commodi autem vitae fugit, architecto deserunt vel consectetur quisquam magnam suscipit. Deserunt, quod quas! Non culpa enim praesentium necessitatibus!'
+          }
         />
+
+        <div className="p-10">
+          <img
+            src={img}
+            ref={imgRef}
+            className=" object-fit-fill bg-center bg-cover"
+          />
+        </div>
       </div>
     </>
   )
