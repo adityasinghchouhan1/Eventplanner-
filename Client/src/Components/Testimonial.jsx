@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import img from '../../public/S2.webp'
 import { gsap } from 'gsap'
 import Heading from '../Resue/Heading'
+import Button from '../Resue/Button'
 const Testimonial = () => {
   const imgRef = useRef(null)
   useEffect(() => {
@@ -38,6 +39,7 @@ const Testimonial = () => {
             className=" object-fit-fill bg-center bg-cover"
           />
         </div>
+        <Button title={'Click to See Servicrs'} />
       </div>
     </>
   )
