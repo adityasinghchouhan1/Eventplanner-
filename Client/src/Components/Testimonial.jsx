@@ -24,7 +24,7 @@ const Testimonial = () => {
   })
   return (
     <>
-      <div className="flex justify-center items-center flex-col p-4">
+      <div className="flex justify-center items-center flex-col p-4 bg-slate-200">
         <Heading
           title={'Live your magic and save your precious memories!'}
           discription={
