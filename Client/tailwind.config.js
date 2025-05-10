@@ -7,6 +7,8 @@ export default {
         inter: ['Inter', 'sans-serif'], // Add your font here
         Yellowtail: ['Yellowtail', 'cursive'],
         Yellowtail2: ['Yellowtail'],
+        CM: ['Cormorant Garamond', 'sans-serif'],
+        Roboto: ['Roboto Serif', 'serif'],
       },
     },
   },
