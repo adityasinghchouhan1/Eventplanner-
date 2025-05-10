@@ -1,11 +1,18 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import Heading from '../Resue/Heading'
 import p from '../../public/p.jpg'
 import p2 from '../../public/p2.jpg'
 import p3 from '../../public/p3.jpg'
 import p4 from '../../public/p4.jpg'
+import Button from '../Resue/Button'
 
 const Portfolio = () => {
+  const navigate = useNavigate()
+
+  const handleNavigate = () => {
+    navigate('/Contact')
+  }
   return (
     <>
       <div className="flex justify-center items-center flex-col  p-5">
@@ -15,7 +22,7 @@ const Portfolio = () => {
             'Our portfolio showcases our expertise in designing and planning unique and unforgettable weddings. From intimate celebrations to grand affairs, we create personalized experiences tailored to our clients vision and style. Our attention to detail and creativity are evident in every wedding we plan, ensuring a flawless and memorable experience for our clients and their guests.'
           }
         />
-        <div className="relative flex flex-col justify-center items-center">
+        <div className="relative flex flex-col justify-center items-center my-6">
           <div className="flex sm:flex-row flex-col justify-around gap-5 items-center">
             <div className=" group w-full md:w-1/2  overflow-hidden hover:scale-90 duration-500 transition-all">
               <img
@@ -81,6 +88,7 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
+        <Button OnClick={handleNavigate} title={'Contect with Us'} />
       </div>
     </>
   )

@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .custom-button {
-  @apply relative border border-black py-2 px-4 overflow-hidden transition-all duration-500;
+  @apply relative border border-2 font-semibold border-black py-2 px-4 overflow-hidden transition-all duration-500;
 }
 
 .custom-button::before {
