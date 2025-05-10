@@ -36,7 +36,7 @@ export default function CoupleFeedbackSlider() {
       <Heading
         title={'Testimonials'}
         discription={
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quibusdam laboriosam'
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quibusdam Testimonials'
         }
       />
       <Swiper
