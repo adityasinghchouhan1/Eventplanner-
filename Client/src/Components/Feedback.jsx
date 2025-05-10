@@ -32,7 +32,7 @@ const feedbackData = [
 
 export default function CoupleFeedbackSlider() {
   return (
-    <div className="w-full h-[80vh] flex-col bg-white flex items-center justify-center px-4">
+    <div className="w-full h-[90vh] flex-col bg-white flex items-center justify-center px-4">
       <Heading
         title={'Testimonials'}
         discription={
@@ -54,7 +54,7 @@ export default function CoupleFeedbackSlider() {
               <img
                 src={item.image}
                 alt={`${item.name}`}
-                className="w-64 h-64 object-cover rounded-full border-4 border-pink-300 shadow-md mb-6 md:mb-0 md:mr-10"
+                className="w-48 h-48 object-cover rounded-full border-4 border-pink-300 shadow-md mb-3 md:mb-0 md:mr-10"
               />
               <div className="max-w-xl text-center md:text-left bg-gray-200 p-5">
                 <FaQuoteLeft className="text-pink-400 text-3xl mb-4" />
