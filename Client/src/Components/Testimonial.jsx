@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import img from '../../public/S2.webp'
+import logo from '../../public/Flower.png'
+
 import { gsap } from 'gsap'
 import Heading from '../Resue/Heading'
 import Button from '../Resue/Button'
@@ -25,6 +27,8 @@ const Testimonial = () => {
   return (
     <>
       <div className="flex justify-center items-center flex-col  p-4 bg-[#f4f0ed]">
+        <img src={logo} />
+
         <Heading
           title={'Live your magic and save your precious memories!'}
           discription={
