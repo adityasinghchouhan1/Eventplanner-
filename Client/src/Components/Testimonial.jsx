@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import img from '../../public/S2.webp'
 import logo from '../../public/Flower2.png'
-
 import { gsap } from 'gsap'
 import Heading from '../Resue/Heading'
 import Button from '../Resue/Button'
