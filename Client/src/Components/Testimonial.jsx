@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import img from '../../public/S2.webp'
-import logo from '../../public/Flower.png'
+import logo from '../../public/Flower2.png'
 
 import { gsap } from 'gsap'
 import Heading from '../Resue/Heading'
@@ -26,9 +26,7 @@ const Testimonial = () => {
   })
   return (
     <>
-      <div className="flex justify-center items-center flex-col  p-4 bg-[#f4f0ed]">
-        <img src={logo} />
-
+      <div className="flex justify-center items-center flex-col pb-14 pt-10 px-4 bg-[#f4f0ed]">
         <Heading
           title={'Live your magic and save your precious memories!'}
           discription={
@@ -70,7 +68,13 @@ const Testimonial = () => {
             </p>
           </div>
         </div>
-        <Button title={'Click to See Servicrs'} />
+        <div className="flex me-10 sm:me-0">
+          <img
+            src={logo}
+            className="w-[55px] bg-center bg-cover object-cover"
+          />
+          <Button title={'Click to See Servicrs'} />
+        </div>
       </div>
     </>
   )

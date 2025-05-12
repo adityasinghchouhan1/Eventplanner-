@@ -1,5 +1,6 @@
 import React from 'react'
 import Heading from '../Resue/Heading'
+import logo from '../../public/Flower.png'
 
 const HowWeAre = () => {
   return (
@@ -12,6 +13,8 @@ const HowWeAre = () => {
               'Rem consequatur labore, illo odit pariatur eos quaerat, aspernatur'
             }
           />
+          <img src={logo} />
+
           <h3 className=" text-gray-500 font-Roboto text-2xl">
             Embark Deeper Into An Exquisite Tapestry Of Blissful Union
           </h3>
