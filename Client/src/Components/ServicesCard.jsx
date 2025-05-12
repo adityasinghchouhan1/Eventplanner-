@@ -54,19 +54,24 @@ const ServicesCard = () => {
   ]
   return (
     <>
-      <div className="flex justify-center items-center flex-col">
+      <div className="flex justify-center items-center flex-col pb-16">
         <Heading
           title={'Our Services & Process'}
           discription={
             'Discover the Path to Your Perfect Union: Allow us to assist you in planning your dream wedding'
           }
         />
-        <div className="flex flex-wrap justify-center items-start gap-4">
+        <div className="flex flex-wrap justify-center items-start gap-4 pb-10">
           {carddata.map((item, index) => (
-            <div key={index} className="w-[22%] min-w-[200px]">
+            <div
+              key={index}
+              className="w-[22%] sm:min-w-[200px] min-w-[360px] pt-3 mt-5 shadow-inner p-5"
+            >
               <img src={item.slogo} alt={item.Sname} className="" />
-              <h2 className="text-2xl mb-5 font-Roboto">{item.Sname}</h2>
-              <p className="text-lg text-gray-600">{item.Sprocess}</p>
+              <h2 className="text-2xl mb-5 font-Roboto text-gray-700">
+                {item.Sname}
+              </h2>
+              <p className=" text-gray-500 font-Yellowtail">{item.Sprocess}</p>
             </div>
           ))}
         </div>
