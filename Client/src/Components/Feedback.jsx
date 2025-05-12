@@ -32,7 +32,7 @@ const feedbackData = [
 
 export default function CoupleFeedbackSlider() {
   return (
-    <div className="w-full h-[90vh] flex-col bg-white flex items-center justify-center px-4">
+    <div className="w-full h-[90vh] flex-col bg-white flex items-center justify-center px-4 pb-12">
       <Heading
         title={'Testimonials'}
         discription={
