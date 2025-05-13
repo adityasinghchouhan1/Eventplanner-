@@ -12,6 +12,8 @@ const ContectForm = () => {
     number: '',
     msg: '',
   })
+  const [error, setError] = useState()
+  const [success, setSuccess] = useState()
 
   const datahandle = (e) => {
     setData({ ...data, [e.target.name]: e.target.value })
@@ -21,8 +23,13 @@ const ContectForm = () => {
       console.log(data)
       const res = await axios.post(SummaryApi.Contect.url, data)
       console.log('POST request successful')
+      if (res.status === 200) {
+        setSuccess('Message sent successfully!')
+        setData({ name: '', email: '', date: '', number: '', msg: '' })
+      }
     } catch (err) {
       console.error(err)
+      setError('Failed to send message')
     }
   }
 
@@ -76,6 +83,8 @@ const ContectForm = () => {
           onChange={datahandle}
         ></textarea>
         <Button title={'SEND'} OnClick={handleSubmit} />
+        {error && <p className="text-red-600">{error}</p>}
+        {success && <p className="text-green-500">{success}</p>}
       </div>
     </div>
   )
