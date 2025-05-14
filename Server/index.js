@@ -12,7 +12,7 @@ server.use(express.json())
 const DBConnection = mongoose.connect(process.env.DBconnection)
 
 DBConnection.then(() => {
-  server.listen(() => {
+  server.listen(process.env.PORT, () => {
     console.log('server is running')
     console.log('DB')
   })
