@@ -7,7 +7,7 @@ import SummaryApi from '../Common/SummaryApi'
 const ContectForm = () => {
   const [data, setData] = useState({
     name: '',
-    email: '',
+    mail: '',
     date: '',
     number: '',
     msg: '',
@@ -25,7 +25,7 @@ const ContectForm = () => {
       console.log('POST request successful')
       if (res.status === 200) {
         setSuccess('Message sent successfully!')
-        setData({ name: '', email: '', date: '', number: '', msg: '' })
+        setData({ name: '', mail: '', date: '', number: '', msg: '' })
       }
     } catch (err) {
       console.error(err)
@@ -56,8 +56,8 @@ const ContectForm = () => {
         <input
           placeholder="E-MAIL"
           className="p-3 border-0 border-b border-gray-300 focus:border-black focus:outline-none"
-          name="email"
-          value={data.email}
+          name="mail"
+          value={data.mail}
           onChange={datahandle}
         />
         <input
