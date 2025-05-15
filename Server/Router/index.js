@@ -10,7 +10,7 @@ const {
 
 Router.post('/contectus', ContectDataFunction)
 Router.get('/getcontectus', getContectData)
-Router.delete('./deleteContect', DeleteContectusData)
-Router.put('./updateContectdata', UpdateContectDetails)
+Router.delete('/deleteContect/:id', DeleteContectusData)
+Router.put('/updateContectdata/:id', UpdateContectDetails)
 
 module.exports = Router

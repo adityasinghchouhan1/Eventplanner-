@@ -20,6 +20,7 @@ const getContectData = async (req, res) => {
     console.log(err, 'error to get data')
   }
 }
+
 const DeleteContectusData = async (req, res) => {
   const { id } = req.params
   try {
