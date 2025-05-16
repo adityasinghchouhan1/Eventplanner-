@@ -40,10 +40,10 @@ const AboutIntro = () => {
           id="intro-slider"
         >
           <h1 className="sm:text-8xl text-6xl" id="title-1">
-            <span className="font-semibold font-Roboto">L</span>ive <span className="font-semibold font-Roboto">Y</span>our <span className="font-semibold font-Roboto">M</span>agic
+            <span className="font-semibold font-Roboto">L</span>ive <span className="font-semibold font-Roboto">Y</span>our <span className="font-semibold font-Roboto">M</span>ag<span className="font-semibold font-Roboto">I</span>c
           </h1>
           <h1 className="sm:text-8xl text-6xl" id="title-2">
-            And save your precious memories!
+            An<span className="font-semibold font-Roboto">D</span> sa<span className="font-semibold font-Roboto">V</span>e <span className="font-semibold font-Roboto">Y</span>our p<span className="font-semibold font-Roboto">R</span>eci<span className="font-semibold font-Roboto">O</span>us <span className="font-semibold font-Roboto">M</span>emo<span className="font-semibold font-Roboto">R</span>ies<span className="font-semibold font-Roboto">!</span>
           </h1>
           <h1
             className="sm:text-8xl text-7xl flex flex-col sm:flex-row"
