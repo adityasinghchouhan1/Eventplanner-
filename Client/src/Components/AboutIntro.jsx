@@ -40,7 +40,7 @@ const AboutIntro = () => {
           id="intro-slider"
         >
           <h1 className="sm:text-8xl text-6xl" id="title-1">
-            Live your <span className="font-semibold font-Roboto">M</span>agic
+            <span className="font-semibold font-Roboto">L</span>ive <span className="font-semibold font-Roboto">Y</span>our <span className="font-semibold font-Roboto">M</span>agic
           </h1>
           <h1 className="sm:text-8xl text-6xl" id="title-2">
             And save your precious memories!
