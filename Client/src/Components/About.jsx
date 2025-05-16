@@ -9,8 +9,8 @@ const About = () => {
     <>
       <div>
         <Wrapper wimg={aboutW} title={'About us'} />
-        <AboutIntro />
         <HowWeAre />
+        <AboutIntro />
         <Feedback />
       </div>
     </>
