@@ -2,13 +2,28 @@ import { useEffect, useRef } from 'react'
 import React from 'react'
 import gsap from 'gsap'
 import introimg from '../../public/Simg3.jpeg'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const AboutIntro = () => {
   const comp = useRef(null)
 
   useEffect(() => {
     let ctx = gsap.context(() => {
-      const t1 = gsap.timeline()
+      const t1 = gsap.timeline(
+        {
+          scrollTrigger:{
+            trigger:comp.current,
+            start:'top top',
+            end:'+=2000',
+            scrub:1,
+            pin:true,
+             markers: false, // Set to true for debugging
+
+          }
+        }
+      )
       t1.from('#intro-slider', {
         xPercent: '-100',
         duration: 1.3,
