@@ -40,13 +40,22 @@ const AboutIntro = () => {
           id="intro-slider"
         >
           <h1 className="sm:text-8xl text-6xl" id="title-1">
-            Live your magic
+            Live your <span className="font-semibold font-Roboto">M</span>agic
           </h1>
           <h1 className="sm:text-8xl text-6xl" id="title-2">
-            and save your precious memories!
+            And save your precious memories!
           </h1>
-          <h1 className="sm:text-8xl text-7xl font-bold" id="title-3">
-            Destination Wedding
+          <h1
+            className="sm:text-8xl text-7xl flex flex-col sm:flex-row"
+            id="title-3"
+          >
+            <p className="flex">
+              Des<span className="font-semibold font-Roboto">T</span>ination
+            </p>
+            <p className="flex">
+              <span className="font-semibold font-Roboto">W</span>
+              edd<span className="font-semibold font-Roboto">I</span>ng
+            </p>
           </h1>
         </div>
         <div
