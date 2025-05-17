@@ -4,9 +4,10 @@ import Heading from '../Resue/Heading'
 import CSimg from '../../public/Simgg.jpg'
 import gsap from 'gsap'
 import Button from '../Resue/Button'
+import { useNavigate } from 'react-router-dom'
 const ServicesDeco = () => {
   const ImgRef = useRef(null)
-
+const navigate = useNavigate()
   useEffect(() => {
     const handlemouse = (e) => {
       const { clientX, clientY } = e
@@ -25,6 +26,10 @@ const ServicesDeco = () => {
       window.removeEventListener('mousemove', handlemouse)
     }
   }, [])
+
+  const OnhandleConnect = () => {
+    navigate('/Contact')
+  }
   return (
     <>
       <div className="flex justify-center items-center flex-col pb-16">
@@ -38,7 +43,7 @@ const ServicesDeco = () => {
           ref={ImgRef}
           className="my-14 sm:my-16 bg-center bg-cover bg-no-repeat object-fit-cover sm:p-0 p-5"
         />
-        <Button title={'Planne your Events'} />
+        <Button title={'Planne your Events'} OnClick={OnhandleConnect} />
       </div>
     </>
   )
