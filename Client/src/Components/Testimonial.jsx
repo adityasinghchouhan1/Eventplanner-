@@ -33,7 +33,7 @@ const Testimonial = () => {
           }
         />
 
-        <div className="flex flex-wrap justify-between items-center w-full mt-5">
+        <div className="flex flex-wrap justify-between items-center w-full mt-6">
           <div className="w-full md:w-1/2 p-6 flex justify-center items-center">
             <img
               src={img}
