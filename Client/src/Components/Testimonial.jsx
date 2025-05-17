@@ -33,7 +33,7 @@ const Testimonial = () => {
           }
         />
 
-        <div className="flex flex-wrap justify-between items-center w-full">
+        <div className="flex flex-wrap justify-between items-center w-full mt-5">
           <div className="w-full md:w-1/2 p-6 flex justify-center items-center">
             <img
               src={img}
@@ -67,7 +67,7 @@ const Testimonial = () => {
             </p>
           </div>
         </div>
-        <div className="flex me-10 sm:me-0">
+        <div className="flex me-10 sm:me-0 mt-10">
           <img
             src={logo}
             className="w-[55px] bg-center bg-cover object-cover"
