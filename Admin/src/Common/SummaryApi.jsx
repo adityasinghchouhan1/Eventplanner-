@@ -13,6 +13,10 @@ const SummaryApi = {
     url: `${backendDomain}/api/updateContectdata`,
     method: 'put',
   },
+  Sliderdataupload: {
+    url: `${backendDomain}/api/sliderdata`,
+    method: 'post',
+  },
 }
 
 export default SummaryApi

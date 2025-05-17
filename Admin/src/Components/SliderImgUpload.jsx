@@ -46,7 +46,7 @@ const SliderImgUpload = () => {
       <div className='p-5 '>
         <h1 className='text-5xl font-serif font-semibold'>Slider Image</h1>
 
-        <div className='flex flex-col justify-center items-center gap-5 mt-10'>
+        <div className='flex flex-col justify-center gap-5 mt-10'>
             <label className='font-serif font-semibold'>Upload Image</label>
             <input
               type='file'

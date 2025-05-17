@@ -16,6 +16,11 @@ const Sidebar = () => {
       icon: <FaEnvelope />,
       path: 'contect',
     },
+    {name:'Slider',
+    icon:<FaEnvelope/>,
+          path: 'slider',
+
+  }
     // Add more menu items here
   ]
 
