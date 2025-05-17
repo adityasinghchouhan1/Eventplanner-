@@ -5,8 +5,12 @@ const bodyparser = require('body-parser')
 const mongoose = require('mongoose')
 const Router = require('./Router/index')
 require('dotenv').config() // <--- Load environment variables
+const path = require('path')
+
 
 server.use(cors())
+server.use('uploads/', express.static(path.join(__dirname, 'uploads')));
+
 server.use(bodyparser.json())
 server.use(express.json())
 server.use('/api', Router)

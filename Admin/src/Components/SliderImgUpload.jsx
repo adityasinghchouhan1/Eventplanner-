@@ -3,13 +3,30 @@ import { useState } from 'react'
 import AboutIntro from '../../../Client/src/Components/AboutIntro'
 import axios from 'axios'
 import SummaryApi from '../Common/SummaryApi'
+import { useEffect } from 'react'
 
 const SliderImgUpload = () => {
+const [sliderList, setSliderList] = useState([]);
     const [Sdata, setSdata] = useState({
         image: null,
         title: '',
         description: '',
     })
+
+
+   useEffect(() => {
+  const fetchData = async () => {
+    try {
+      const res = await axios.get(SummaryApi.getSliderdata.url);
+      setSliderList(res.data?.data || []); // assuming response has { data: [...] }
+    } catch (err) {
+      console.log(err);
+    }
+  };
+  fetchData();
+}, []);
+
+
     const handleChange = (e) => {
         const { name, value, files } = e.target
         if (name === 'image') {
@@ -36,6 +53,11 @@ const SliderImgUpload = () => {
         });
 
         console.log('Upload successful:', res.data);
+        setSdata({
+            image: null,
+            title: '',
+            description: '',
+        });
     } catch (err) {
         console.error('Upload failed:', err);
     }
@@ -70,6 +92,38 @@ const SliderImgUpload = () => {
                 <button onClick={OnSubmitData} className='bg-blue-500 flex justify-center text-white font-semibold py-2 px-4 rounded-lg mt-5'>
                   Upload </button>
         </div>
+        {sliderList.length > 0 ? (
+  <div className="mt-10 w-full">
+    <h2 className="text-3xl font-serif font-semibold mb-4">Slider Data Table</h2>
+    <table className="table-auto w-full border-collapse border border-gray-300">
+      <thead className="bg-gray-100">
+        <tr>
+          <th className="border border-gray-300 px-4 py-2 text-left">Image</th>
+          <th className="border border-gray-300 px-4 py-2 text-left">Title</th>
+          <th className="border border-gray-300 px-4 py-2 text-left">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        {sliderList.map((item, index) => (
+          <tr key={index} className="hover:bg-gray-50">
+            <td className="border border-gray-300 px-4 py-2">
+              <img
+                src={`http://localhost:8008/api/uploads/${item.image}`} // update to your actual path
+                alt="slider"
+                className="w-24 h-auto rounded"
+              />
+            </td>
+            <td className="border border-gray-300 px-4 py-2">{item.title}</td>
+            <td className="border border-gray-300 px-4 py-2">{item.description}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+) : (
+  <p className="text-gray-500 mt-10">No slider data found.</p>
+)}
+
       </div>
     </>
   )

@@ -17,6 +17,10 @@ const SummaryApi = {
     url: `${backendDomain}/api/sliderdata`,
     method: 'post',
   },
+  getSliderdata: {
+    url: `${backendDomain}/api/getsliderdata`,
+    method: 'get',
+  },
 }
 
 export default SummaryApi

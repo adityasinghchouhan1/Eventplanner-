@@ -13,7 +13,7 @@ const sliderShcema = mongoose.Schema({
 type:String,
         required:true
     }
-})
+},{ timestamps: true });
 
 const Slider = mongoose.model('Slider',sliderShcema);
 module.exports = Slider;

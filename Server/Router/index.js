@@ -21,7 +21,7 @@ const {
   UpdateContectDetails,
 } = require('../Controller/ContectUsController')
 
-const {SliderDataController} = require('../Controller/SliderDataController')
+const {SliderDataController,getSliderData} = require('../Controller/SliderDataController')
 
 
 // Contect Us Route
@@ -32,6 +32,7 @@ Router.put('/updateContectdata/:id', UpdateContectDetails)
 
 // Slider Route
 Router.post('/sliderdata',upload.single('image'), SliderDataController) 
+Router.get('/getsliderdata', getSliderData)
 
 
 module.exports = Router
