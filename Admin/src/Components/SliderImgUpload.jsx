@@ -46,7 +46,7 @@ const SliderImgUpload = () => {
       <div className='p-5 '>
         <h1 className='text-5xl font-serif font-semibold'>Slider Image</h1>
 
-        <div className='flex flex-col justify-center gap-5 mt-10'>
+        <div className='flex flex-col justify-center items-start gap-5 mt-10'>
             <label className='font-serif font-semibold'>Upload Image</label>
             <input
               type='file'
@@ -67,7 +67,7 @@ const SliderImgUpload = () => {
                 onChange={handleChange}
                 className='border-2 border-gray-300 rounded-lg p-2 w-1/2'/>
 
-                <button onClick={OnSubmitData} className='bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg mt-5'>
+                <button onClick={OnSubmitData} className='bg-blue-500 flex justify-center text-white font-semibold py-2 px-4 rounded-lg mt-5'>
                   Upload </button>
         </div>
       </div>
