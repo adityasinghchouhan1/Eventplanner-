@@ -4,13 +4,13 @@ const cors = require('cors')
 const bodyparser = require('body-parser')
 const mongoose = require('mongoose')
 const Router = require('./Router/index')
-require('dotenv').config() // <--- Load environment variables
+require('dotenv').config()
 const path = require('path')
 
+// ✅ Correct static path
+server.use('/uploads', express.static(path.join(__dirname, 'uploads')))
 
 server.use(cors())
-server.use('uploads/', express.static(path.join(__dirname, 'uploads')));
-
 server.use(bodyparser.json())
 server.use(express.json())
 server.use('/api', Router)

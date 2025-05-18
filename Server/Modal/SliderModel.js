@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const sliderShcema = mongoose.Schema({
-    Image:{
+    image:{
         type:String,
         required:true
     },

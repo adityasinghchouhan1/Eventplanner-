@@ -3,13 +3,12 @@ const Router = express.Router()
 const multer  = require('multer')
 
 const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, 'uploads/')
+  destination: (req, file, cb) => {
+    cb(null, 'uploads/') // Make sure this folder exists
   },
-  filename: function (req, file, cb) {
-    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9)
-    cb(null, file.fieldname + '-' + uniqueSuffix)
-  }
+  filename: (req, file, cb) => {
+    cb(null, Date.now() + '-' + file.originalname)
+  },
 })
 
 const upload = multer({ storage: storage })
@@ -21,7 +20,7 @@ const {
   UpdateContectDetails,
 } = require('../Controller/ContectUsController')
 
-const {SliderDataController,getSliderData} = require('../Controller/SliderDataController')
+const {SliderDataController,getSliderData,deleteSliderData,SliderdataUpdate} = require('../Controller/SliderDataController')
 
 
 // Contect Us Route
@@ -33,6 +32,6 @@ Router.put('/updateContectdata/:id', UpdateContectDetails)
 // Slider Route
 Router.post('/sliderdata',upload.single('image'), SliderDataController) 
 Router.get('/getsliderdata', getSliderData)
-
-
+Router.delete('/deleteslider/:id', deleteSliderData)
+Router.put('/updateslider/:id', SliderdataUpdate)
 module.exports = Router

@@ -19,8 +19,18 @@ const SummaryApi = {
   },
   getSliderdata: {
     url: `${backendDomain}/api/getsliderdata`,
+    imageBaseUrl: `${backendDomain}/uploads`,  // 👈 Add this line
     method: 'get',
   },
+  deleteslider: {
+    url: `${backendDomain}/api/deleteslider`,
+    method: 'delete',
+  },
+  UpdateSlider: { 
+    url: `${backendDomain}/api/updateslider`,
+    method: 'put',
+  },
+  
 }
 
 export default SummaryApi
