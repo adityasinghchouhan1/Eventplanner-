@@ -4,7 +4,7 @@ import AboutIntro from '../../../Client/src/Components/AboutIntro'
 import axios from 'axios'
 import SummaryApi from '../Common/SummaryApi'
 import { useEffect } from 'react'
-
+const BASE_URL = import.meta.env.VITE_SERVER_URL
 const SliderImgUpload = () => {
 const [sliderList, setSliderList] = useState([]);
     const [Sdata, setSdata] = useState({
@@ -108,7 +108,7 @@ const [sliderList, setSliderList] = useState([]);
           <tr key={index} className="hover:bg-gray-50">
             <td className="border border-gray-300 px-4 py-2">
               <img
-                src={`http://localhost:8008/api/uploads/${item.image}`} // update to your actual path
+                src={`${BASE_URL}/uploads/${item.image}`} // update to your actual path
                 alt="slider"
                 className="w-24 h-auto rounded"
               />
