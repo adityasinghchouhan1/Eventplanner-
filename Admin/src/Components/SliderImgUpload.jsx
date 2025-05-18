@@ -98,7 +98,7 @@ const [sliderList, setSliderList] = useState([]);
     <table className="table-auto w-full border-collapse border border-gray-300">
       <thead className="bg-gray-100">
         <tr>
-          <th className="border border-gray-300 px-4 py-2 text-left">Image</th>
+          <th className="border border-gray-300 px-4 py-2 text-left">Imagee</th>
           <th className="border border-gray-300 px-4 py-2 text-left">Title</th>
           <th className="border border-gray-300 px-4 py-2 text-left">Description</th>
         </tr>
