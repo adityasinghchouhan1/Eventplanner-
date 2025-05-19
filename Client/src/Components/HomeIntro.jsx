@@ -52,7 +52,7 @@ const HomeIntro = () => {
       <div className=' relative' ref={comp}
       >
         <div className='tracking-tight absolute z-10 h-screen w-full top-0 gap-10  left-0 flex flex-col justify-start bg-gray-600'  id='intro'>
-            <h2 className='sm:text-8xl text-4xl font-Yellowtail2 font-semibold text-black' id='T-1'>hellow</h2>
+            <h2 className='sm:text-8xl text-4xl font-Yellowtail2 font-semibold text-black' id='T-1'>hedjfuweuifvivullow</h2>
             <h2 className='sm:text-8xl text-4xl font-Yellowtail2 font-semibold text-black' id='T-2'>hellow</h2>
             <h2 className='sm:text-8xl text-4xl font-Yellowtail2 font-semibold text-black' id='T-3'>hellow</h2>
         </div>
