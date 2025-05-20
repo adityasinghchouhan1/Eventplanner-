@@ -11,19 +11,16 @@ const AboutIntro = () => {
 
   useEffect(() => {
     let ctx = gsap.context(() => {
-      const t1 = gsap.timeline(
-        {
-          scrollTrigger:{
-            trigger:comp.current,
-            start:'top top',
-            end:'+=2000',
-            scrub:1,
-            pin:true,
-             markers: false, // Set to true for debugging
-
-          }
-        }
-      )
+      const t1 = gsap.timeline({
+        scrollTrigger: {
+          trigger: comp.current,
+          start: 'top top',
+          end: '+=2000',
+          scrub: 1,
+          pin: true,
+          markers: false, // Set to true for debugging
+        },
+      })
       t1.from('#intro-slider', {
         xPercent: '-100',
         duration: 1.3,
@@ -55,10 +52,20 @@ const AboutIntro = () => {
           id="intro-slider"
         >
           <h1 className="sm:text-8xl text-6xl" id="title-1">
-            <span className="font-semibold font-Roboto">L</span>ive <span className="font-semibold font-Roboto">Y</span>our <span className="font-semibold font-Roboto">M</span>ag<span className="font-semibold font-Roboto">I</span>c
+            <span className="font-semibold font-Roboto">L</span>ive
+            <span className="font-semibold font-Roboto">Y</span>our{' '}
+            <span className="font-semibold font-Roboto">M</span>ag
+            <span className="font-semibold font-Roboto">I</span>c
           </h1>
           <h1 className="sm:text-8xl text-6xl" id="title-2">
-            An<span className="font-semibold font-Roboto">D</span> sa<span className="font-semibold font-Roboto">V</span>e <span className="font-semibold font-Roboto">Y</span>our p<span className="font-semibold font-Roboto">R</span>eci<span className="font-semibold font-Roboto">O</span>us <span className="font-semibold font-Roboto">M</span>emo<span className="font-semibold font-Roboto">R</span>ies<span className="font-semibold font-Roboto">!</span>
+            An<span className="font-semibold font-Roboto">D</span> sa
+            <span className="font-semibold font-Roboto">V</span>e{' '}
+            <span className="font-semibold font-Roboto">Y</span>our p
+            <span className="font-semibold font-Roboto">R</span>eci
+            <span className="font-semibold font-Roboto">O</span>us{' '}
+            <span className="font-semibold font-Roboto">M</span>emo
+            <span className="font-semibold font-Roboto">R</span>ies
+            <span className="font-semibold font-Roboto">!</span>
           </h1>
           <h1
             className="sm:text-8xl text-7xl flex flex-col sm:flex-row"
