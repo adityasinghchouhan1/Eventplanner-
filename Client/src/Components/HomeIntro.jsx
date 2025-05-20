@@ -2,65 +2,82 @@ import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-
 gsap.registerPlugin(ScrollTrigger)
+
 const HomeIntro = () => {
-    const comp = useRef(null)
-   useEffect(() => {
-  const ctx = gsap.context(() => {
-    const intro = comp.current.querySelector('#intro');
-    const texts = comp.current.querySelectorAll('#T-1, #T-2, #T-3');
+  const comp = useRef(null)
 
-    const t1 = gsap.timeline({
-      scrollTrigger: {
-        trigger: comp.current,
-        start: 'top top',
-        end: '+=2000',
-        scrub: 1,
-        pin: true,
-        markers: true, // Turn on to debug
-      },
-    });
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const intro = comp.current.querySelector('#intro')
+      const texts = comp.current.querySelectorAll('#T-1, #T-2, #T-3')
 
-    t1.from(intro, {
-      xPercent: -100,
-      duration: 1.3,
-      delay: 0.3,
-    })
-    .from(texts, {
-      opacity: 0,
-      y: 30,
-      stagger: 0.5,
-    })
-    .to(texts, {
-      opacity: 0,
-      y: -30,
-      delay: 0.3,
-      stagger: 0.5,
-    })
-    .to(intro, {
-      xPercent: -100,
-      duration: 1.3,
-    });
-  }, comp);
+      const t1 = gsap.timeline({
+        scrollTrigger: {
+          trigger: comp.current,
+          start: 'top top',
+          end: '+=2000',
+          scrub: 1,
+          pin: true,
+        },
+      })
 
-  return () => ctx.revert();
-}, []);
+      t1.from(intro, {
+        xPercent: -100,
+        duration: 1.3,
+        delay: 0.3,
+      })
+        .from(texts, {
+          opacity: 0,
+          y: 30,
+          stagger: 0.5,
+        })
+        .to(texts, {
+          opacity: 0,
+          y: -30,
+          delay: 0.3,
+          stagger: 0.5,
+        })
+        .to(intro, {
+          xPercent: -100,
+          duration: 1.3,
+        })
+    }, comp)
+
+    return () => ctx.revert()
+  }, [])
 
   return (
-    <>
-      <div className=' relative' ref={comp}
+    <div className="relative" ref={comp}>
+      <div
+        className="tracking-tight absolute z-10 h-screen w-full top-0 gap-10 left-0 flex flex-col justify-center items-center bg-pink-100"
+        id="intro"
       >
-        <div className='tracking-tight absolute z-10 h-screen w-full top-0 gap-10  left-0 flex flex-col justify-start bg-gray-600'  id='intro'>
-            <h2 className='sm:text-8xl text-4xl font-Yellowtail2 font-semibold text-black' id='T-1'>hedjfuweuifvivullow</h2>
-            <h2 className='sm:text-8xl text-4xl font-Yellowtail2 font-semibold text-black' id='T-2'>hellow all the visiter</h2>
-            <h2 className='sm:text-8xl text-4xl font-Yellowtail2 font-semibold text-black' id='T-3'>hellow</h2>
-        </div>
-        <div className='h-screen w-full flex justify-center place-items-center p-5'>
-            <h1 className='font-semibold font-Roboto text-8xl'>WELCOME...</h1>
-        </div>
+        <h2
+          className="sm:text-7xl text-4xl font-Yellowtail2 font-semibold text-rose-600"
+          id="T-1"
+        >
+          Your Dream Wedding
+        </h2>
+        <h2
+          className="sm:text-7xl text-4xl font-Yellowtail2 font-semibold text-rose-600"
+          id="T-2"
+        >
+          Crafted with Love & Elegance
+        </h2>
+        <h2
+          className="sm:text-7xl text-4xl font-Yellowtail2 font-semibold text-rose-600"
+          id="T-3"
+        >
+          Begin Your Forever With Us
+        </h2>
       </div>
-    </>
+      <div className="h-screen w-full flex justify-center items-center p-5 bg-white">
+        <h1 className="font-semibold font-Roboto sm:text-8xl text-4xl text-center text-gray-800">
+          Welcome to Eternal Bliss Planners
+        </h1>
+      </div>
+    </div>
   )
 }
 
