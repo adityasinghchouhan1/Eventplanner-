@@ -55,7 +55,12 @@ const HomeIntro = () => {
         id="intro"
       >
         <h2 className="sm:text-7xl text-6xl font-Roboto text-rose-600" id="T-1">
-          Your Dream Wedding
+          You<span className="font-semibold font-Roboto">R</span> dr
+          <span className="font-semibold font-Roboto">E</span>a
+          <span className="font-semibold font-Roboto">W</span> w
+          <span className="font-semibold font-Roboto">E</span>d
+          <span className="font-semibold font-Roboto">D</span>in
+          <span className="font-semibold font-Roboto">G</span>
         </h2>
 
         <h1
@@ -70,7 +75,7 @@ const HomeIntro = () => {
             Crafted with Love & Elegance
           </h2>
         </h1>
-        <h2 className="sm:text-7xl text-6xl font-Roboto text-rose-600" id="T-3">
+        <h2 className="sm:text-5xl text-3xl font-Roboto text-rose-600" id="T-3">
           Begin Your Forever With Us
         </h2>
       </div>
