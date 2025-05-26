@@ -7,6 +7,7 @@ const SummaryApi = {
   },
   getsliderdata: {
     url: `${backendDomain}/api/getsliderdata`,
+    imageBaseUrl: `${backendDomain}/uploads`, // 👈 Add this line
     method: 'get',
   },
 }
