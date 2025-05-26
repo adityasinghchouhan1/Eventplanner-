@@ -5,6 +5,10 @@ const SummaryApi = {
     url: `${backendDomain}/api/contectus`,
     method: 'post',
   },
+  getsliderdata: {
+    url: `${backendDomain}/api/getsliderdata`,
+    method: 'get',
+  },
 }
 
 export default SummaryApi
