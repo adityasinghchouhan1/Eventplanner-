@@ -59,7 +59,7 @@ export default () => {
                   }}
                 >
                   <div className=" absolute bottom-10 sm:left-8 left-0  gap-6 flex flex-col justify-start items-start p-5">
-                    <h1 className="text-6xl font-Robot ont-bold text-white ">
+                    <h1 className="text-6xl font-Robot font-bold text-white">
                       {item.title}
                     </h1>
                     <p
