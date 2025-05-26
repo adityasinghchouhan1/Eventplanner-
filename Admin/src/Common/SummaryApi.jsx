@@ -1,4 +1,5 @@
-const backendDomain = 'http://localhost:8008'
+// const backendDomain = 'http://localhost:8008'
+const backendDomain = 'https://eventplanner-8671.onrender.com'
 
 const SummaryApi = {
   Contectus: {

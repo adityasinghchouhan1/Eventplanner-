@@ -50,28 +50,34 @@ const Navbar = () => {
           }`}
         >
           <ul className="flex flex-col justify-center items-center gap-8 text-xl pt-16 text-center">
-            <li className="hover:bg-slate-900 w-full py-2 transition-all duration-200">
-              {' '}
-              <NavLink to="" onClick={CloseButton}>
-                Home
-              </NavLink>
-            </li>
-            <li className="hover:bg-slate-900 w-full py-2 transition-all duration-200">
-              <NavLink to="About" onClick={CloseButton}>
-                About
-              </NavLink>
-            </li>
-            <li className="hover:bg-slate-900 w-full py-2 transition-all duration-200">
-              <NavLink to="Services" onClick={CloseButton}>
-                Services
-              </NavLink>
-            </li>
-            <li className="hover:bg-slate-900 w-full py-2 transition-all duration-200">
-              {' '}
-              <NavLink to="Contact" onClick={CloseButton}>
-                Contact
-              </NavLink>
-            </li>
+            <NavLink
+              className="hover:bg-slate-900 w-full py-2 transition-all duration-200"
+              to=""
+              onClick={CloseButton}
+            >
+              Home
+            </NavLink>
+            <NavLink
+              className="hover:bg-slate-900 w-full py-2 transition-all duration-200"
+              to="About"
+              onClick={CloseButton}
+            >
+              About
+            </NavLink>
+            <NavLink
+              className="hover:bg-slate-900 w-full py-2 transition-all duration-200"
+              to="Services"
+              onClick={CloseButton}
+            >
+              Services
+            </NavLink>
+            <NavLink
+              className="hover:bg-slate-900 w-full py-2 transition-all duration-200"
+              to="Contact"
+              onClick={CloseButton}
+            >
+              Contact
+            </NavLink>
           </ul>
         </div>
       </nav>
