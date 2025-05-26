@@ -51,10 +51,10 @@ const HomeIntro = () => {
   return (
     <div className="relative" ref={comp}>
       <div
-        className="tracking-tight absolute z-10 h-screen w-full top-0 sm:gap-10 gap-14 left-0 flex flex-col justify-center items-center bg-pink-100 text-center"
+        className="tracking-tight absolute z-10 h-screen w-full top-0 sm:gap-10 gap-14 left-0 flex flex-col justify-center items-center bg-yellow-200  text-center"
         id="intro"
       >
-        <h2 className="sm:text-7xl text-6xl font-Roboto text-rose-600" id="T-1">
+        <h2 className="sm:text-8xl text-6xl font-Roboto" id="T-1">
           You<span className="font-semibold font-Roboto">R</span> dr
           <span className="font-semibold font-Roboto">E</span>a
           <span className="font-semibold font-Roboto">W</span> w
@@ -71,12 +71,17 @@ const HomeIntro = () => {
             src={logo}
             className="w-52 bg-center object-fit-cover bg-cover"
           />
-          <h2 className="sm:text-2xl text-sm font-Yellowtail font-semibold text-rose-600">
+          <h2 className="sm:text-2xl text-sm font-Yellowtail font-semibold">
             Crafted with Love & Elegance
           </h2>
         </h1>
-        <h2 className="sm:text-5xl text-3xl font-Roboto text-rose-600" id="T-3">
-          Begin Your Forever With Us
+        <h2 className="sm:text-8xl text-3xl font-Roboto" id="T-3">
+          <span className="font-semibold font-Roboto">B</span>eg
+          <span className="font-semibold font-Roboto">I</span>n You
+          <span className="font-semibold font-Roboto">R</span> Fo
+          <span className="font-semibold font-Roboto">E</span>ve
+          <span className="font-semibold font-Roboto">R</span> Wi
+          <span className="font-semibold font-Roboto">H</span>h Us
         </h2>
       </div>
       <div className="h-screen w-full flex justify-center items-center p-5 bg-white">
