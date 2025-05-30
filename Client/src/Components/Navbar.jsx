@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className="bg-gradient-to-r rounded-sm  from-white  flex justify-center items-center">
           <img
             src={logo}
-            className="w-16 bg-center bg-no-repeat object-fit-cover bg-cover "
+            className="w-16 bg-center bg-no-repeat object-fit-cover bg-cover"
           />
           <h1 className="text-black font-Yellowtail text-3xl">EB Planners</h1>
         </div>
