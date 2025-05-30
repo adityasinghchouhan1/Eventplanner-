@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { FaBars, FaTimes } from 'react-icons/fa'
-
+import logo from '../../public/FM.png'
 const Navbar = () => {
   const [isOpen, setIsopen] = useState(false)
 
@@ -14,8 +14,14 @@ const Navbar = () => {
   }
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-20 flex justify-between items-center px-4 py-8 bg-black/35  text-white">
-        <div className=" text-2xl font-semibold text-white">MY LOgo</div>
+      <nav className="fixed top-0 left-0 w-full z-20 flex justify-between items-center pr-2 py-3 bg-black/35  text-white ">
+        <div className="bg-gradient-to-r rounded-sm  from-white  flex justify-center items-center">
+          <img
+            src={logo}
+            className="w-16 bg-center bg-no-repeat object-fit-cover bg-cover "
+          />
+          <h1 className="text-black font-Yellowtail text-3xl">EB Planners</h1>
+        </div>
         <ul className="hidden md:flex gap-12 font-bold">
           <li>
             <NavLink to="" onClick={CloseButton}>
